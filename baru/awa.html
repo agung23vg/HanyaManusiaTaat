@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Mencegah form dikirim secara otomatis
+
+            // Mendapatkan nilai input dari username dan password
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Contoh validasi login sederhana
+            const validUsername = "username"; // Ganti dengan username yang valid
+            const validPassword = "password"; // Ganti dengan password yang valid
+
+            // Jika username dan password benar
+            if (username === validUsername && password === validPassword) {
+                // Redirect ke halaman sukses (misalnya "dashboard.html")
+                window.location.href = "daskbord.html";
+            } else {
+                // Menampilkan alert jika gagal login
+                alert("Username atau password salah. Silakan coba lagi.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Tambahkan "onsubmit" untuk menjalankan JavaScript saat form disubmit -->
+        <form action="FormLogin.html" method="POST" onsubmit="validateLogin(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="kalkulator.html">Sign up</a></p>
+    </div>
+</body>
+</html>

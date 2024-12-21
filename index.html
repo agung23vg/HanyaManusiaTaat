@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Agung Pranoto Susilo</h1>
+        <p> CyberSecurity | Designer | Freelancer</p>
+        <a href="#about" class="btn">Tentang Saya</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Perkenalkan nama saya Agung Pranoto Susilo, Umur hanya allah yang tau. Hobi saya Memancing, Futsal, Bersepedah Dan Ngoding.<br>Saya memiliki skil multi tasking dan mampu beradaptasi dengan lingkungan baru. Kelemahan saya daya tangkap yang sedikit lambat tetapi memiliki daya ingat yang kuat</p>
+        <h2>Skill's</h2>
+        <ul>
+            <li>Basic dasar Python</li>
+            <li>Basic dasar html, css, dan java.</li>
+            <li>Basic dasar Penetrasi Testing</li>
+        </ul>
+    </section>
+
+
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="baru/10.png" alt="Proyek 1">
+                <h3>Proyek 1</h3>
+                <p>Tugas Pertama yang dimana membuat form login</p><br>
+                <a href="baru/FormLogin.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/13.png" alt="Proyek 2">
+                <h3>Proyek 2</h3>
+                <p>Kemudian ada tugas ke-2 membuat kalkulator</p><br>
+                <a href="baru/kalkulator.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/11.png" alt="Proyek 3">
+                <h3>Proyek 3</h3>
+                <p>Pada tugas disini saya membuat halaman awal dashboard </p>
+                <br><a href="baru/daskbord.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/12.png" alt="Proyek 4">
+                <h3>Proyek 4</h3>
+                <p>Tugas terakhir tentang membuat portofolio, yang saya buat ini termasuk tugas terakhir yang diberikan</p>
+                <br><a href="#about" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/serti.png" alt="Proyek 4">
+                <h3>Proyek 5</h3>
+                <p>Beberapa sertifikat dari sololearn yang telah didapatkan yang telah dilakukan selama kurang lebih sebulan</p>
+                <br><a href="baru/sertifikat.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/ular.png" alt="Proyek 4">
+                <h3>Proyek 6</h3>
+                <p>disini saya membuat game sederhana yaitu game ular menggunakan bahasa html, css, dan js. Jika ada yang bisa Mengalahkan skor saya akan ada hadiahnya, Skornya 160, jika berhasil silahkan Chat saya melalui link yang berada di kontak </p>
+                <br><a href="baru/ular.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="project">
+                <img src="baru/diagram.png" alt="Proyek 4">
+                <h3>Proyek 7</h3>
+                <p>Disini saya membuat diagram sederhana mengenai laporan penjualan di pasar Bengkok Pada tukang TAHU</p>
+                <br><a href="baru/diagram.html" class="btn">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="agungnugraha4345@gmail.com">agungnugraha4345@gmail.com</a></p>
+        <div class="socials">
+            <a href="https://github.com/agung23vg"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100013446704933"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/agps_12/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agung Pranoto Susilo. <br>Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
